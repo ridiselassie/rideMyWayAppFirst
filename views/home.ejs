@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridify | Ride Easy </title>
+    <link rel="stylesheet" href="/assets/homeStyle.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="/" class="left-float" id="ridify">Ridify&reg;</a></li>
+                <li><a href="/" class="left-float">Home</a></li>
+                <li><a href="#box-1" class="left-float">Sign Up</a></li>
+                <li><a href="#box-2" class="left-float">Login</a></li>
+                <li><a href="/about" class="right-float">About Us</a></li>&nbsp&nbsp&nbsp&nbsp
+                <li><a href="/feedback" class="right-float">Feedbacks</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class='' id="rect">
+        <ul>
+            <li><a href="">View New Offers</a></li>
+            <li><a href="">Get Coupon</a></li>
+            <li><a href="">Hot Deals</a></li>
+            <li><a href="">Pre-Order</a></li>
+            <li><a href="">Promo</a></li>
+            <li><a href="">Earn</a></li>
+            <li><a href="">Lite</a></li>
+            <li ><a href="/help" class="right">Help ?</a></li>
+        </ul>
+    </section>
+
+    <div class=''  id="box-container">
+
+        <div id="box-1">
+
+             <h1 class='flex-head' >SIGN UP TO RIDE</h1> 
+
+            <div class="form-div">
+
+                    <%- include ('./partials/messages') %>
+
+                <form action="/users/register" method="POST">
+                
+                        <label for="name">Full Name:</label>
+                        <input type="name" id="name" name="name" placeholder="Enter your full name" value="<%= typeof name != 'undefined' ? name : '' %>"><br><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" value="<%= typeof email != 'undefined' ? email : '' %>"><br><br><br>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter a password" value="<%= typeof password != 'undefined' ? password : '' %>"><br><br><br>
+
+                        <label for="password2">Confirm Password:</label>
+                        <input type="password" id="password2" name="password2" placeholder="Confirm your password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>"><br><br><br>
+
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" placeholder="Enter your precise location" value="<%= typeof location != 'undefined' ? location : '' %>"><br><br><br>
+
+                        <p>By creating an account, you agree to our <a href="/terms">Terms & Conditions</a></p>
+
+                        <input type="submit"  value="Sign Up">
+
+                        <p>Already have an account ? <a href="/users/login">Log in</a></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div id="box-2">
+            <h1 class='flex-head' >LOGIN TO RIDE</h1> 
+
+            <div class="form-div">
+
+                <%- include ('./partials/messages') %>
+
+                <form action = "/users/login" method="POST" >
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" value=""><br><br><br>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" value=""><br><br><br>
+
+                        <input type="submit"  value="Login">
+
+                </form>
+
+            </div>
+
+        </div>
+
+            <div id="box-3">
+                <h1><a href="/users/register">REGISTER TO DRIVE ></a>&nbsp;&nbsp;&nbsp; <a href="/users/login">LOGIN TO DRIVE ></a></h1>
+            </div>
+    </div>
+
+    <div id="safety">
+        
+            <h1>Safety Guide & Precautions</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis id, praesentium soluta reprehenderit amet culpa ipsum, cum hic numquam, ratione quisquam quod eligendi temporibus quia quas libero et accusamus optio!
+            Aliquid deleniti omnis et sunt accusantium ullam distinctio quo iure, impedit voluptas suscipit beatae rem repellat eaque quaerat aspernatur obcaecati quia ex. Maxime minima magni natus, quos assumenda fuga quam!
+            Facere repellendus vitae dicta quia harum distinctio sunt exercitationem excepturi, laborum odit eveniet laudantium reiciendis numquam cum aut praesentium commodi doloremque vel, debitis quas beatae sapiente repellat sed. Est, tenetur!
+            Consectetur error ipsum ad necessitatibus ducimus eius non aperiam earum nesciunt praesentium vitae id, nisi tempore quia animi sequi repellendus? Debitis hic commodi magni corporis impedit, repellat modi voluptatem iure <a style="color: darkgreen;" href="https://www.betterhealth.vic.gov.au/health/ten-tips/10-tips-for-work-safety" target="_blank">Read More</a>.
+            </p>
+        
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="/ridify">&copy;2020 Ridify&#174; Tech Ltd</a></li>
+            <li><a href="/privacy" class="footer-right">Privacy&trade;</a></li>
+            <li><a href="/terms" class="footer-right">Terms & Conditions</a></li>
+            <li><a href="" class="footer-socials">twitter</a></li>
+            <li><a href="" class="footer-socials">facebook</a></li>
+            <li><a href="/ridify" class="footer-socials">About Ridify&reg;</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>

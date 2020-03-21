@@ -1,0 +1,113 @@
+.header{
+    /*background-color: rgb(170, 128, 49);*/
+    background-color: rgb(87, 87, 20);
+    height: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    
+}
+
+nav ul li a:hover{
+    background-color: rgb(25, 148, 25);
+}
+
+.right-float{
+    float: right;
+    margin: 14px;
+}
+
+.left-float{
+    float: left;
+    margin: 14px;
+}
+
+#dash{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#car-pooling{
+    background-image: url('background-carpool.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    height: 500px;
+    margin-top: 20px;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 25px;  
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 3px;
+  }
+
+  .dropdown .dropbtn:hover {
+    background-color: rgb(25, 148, 25);
+    
+  }
+
+  /*i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+
+  .arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  } */
+
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(143, 143, 21);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    font-size: 25px;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(25, 148, 25);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  

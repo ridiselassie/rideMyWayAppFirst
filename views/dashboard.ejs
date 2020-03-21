@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridify | Dashboard</title>
+    <link rel="stylesheet" href="/assets/dashStyle.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="/" class="left-float" id="dash">Ridify&reg;</a></li>
+                <li><a href="/dashboard" class="left-float" id="dash">Dashboard</a></li>
+                <li><a href="/" class="left-float">Home</a></li>
+                
+                    <div class="dropdown">
+                            <button class="dropbtn">ride offers
+                                <!--<i class="arrow-down"></i> -->
+                            </button>
+                        <div class="dropdown-content">
+                            <a href="">create offers</a>
+                            <a href="/dashboard/view-offers" id="">view offers</a>
+                        </div>
+                    </div>
+                
+                <li><a href="/profile" class="left-float">profile</a></li>
+                <li><a href="" class="left-float">records</a></li>
+                <li><a href="/users/logout" class="right-float">LOG OUT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="car-pooling">
+        <%/* background image */%>
+            <h1>Welcome <%= name %></h1>    
+
+            <form action="/create-offers" method="POST" id="addData" >
+                <input type="text" id="destination" name="destination" placeholder="Destination" value="">
+                <input type="text" id="departure" name="departure" placeholder="Depature Time" value="">
+                <hr>
+                <input type="submit" value="Add Req">
+            </form>
+            
+    </div>
+
+    <button id="getData">get rides</button>
+
+    <div id="output">
+    
+    </div>
+
+    <%- include ('./partials/footer') %>
+
+
+    <script src="js/dashboard.js">
+
+
+    </script>
+</body>
+</html>

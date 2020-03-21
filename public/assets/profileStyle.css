@@ -1,0 +1,73 @@
+/*****************************************Flex Container***************************************************/
+
+#profile-container {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+
+/***************************Flex box 1***************************/
+
+#profile-1 {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(98, 129, 98);
+    /*background-color: rgb(114, 114, 25); */
+}
+
+#profile-1 ul {
+    list-style-type: none;
+}
+
+#profile-1 ul li{
+    display: inline;
+}
+
+
+#profile-1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    line-height: 0.1em;
+}
+
+#profile-1 ul li a:hover{
+    background-color: rgb(25, 148, 25);
+}
+
+#welcome {
+    font-size: 40px;
+    font-weight: normal;
+    color: white;
+    font-style: oblique;
+}
+
+/***************************Flex box 2***************************/
+
+#profile-2 {
+    background-image: url('/assets/profile-back.jpg');
+
+    align-self: center;
+    width: 100%;
+    height: 90%;
+    background-color: rgb(233, 247, 244);
+}
+
+
+
+  h3{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+
+  }
+  
+
+  h4{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+  }

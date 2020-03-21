@@ -1,0 +1,256 @@
+body{
+    background-color: cornsilk;
+}
+
+/****************** navigation bar *********************/
+
+.header{
+    /*background-color: rgb(170, 128, 49);*/
+    background-color: rgb(87, 87, 20);
+    height: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    
+}
+
+nav ul li a:hover{
+    background-color: rgb(25, 148, 25);
+}
+
+.right-float{
+    float: right;
+    margin: 14px;
+}
+
+.left-float{
+    float: left;
+    margin: 14px;
+}
+
+#ridify{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+/**************** second navigation bar *************************/
+
+section{
+    display: flex;
+    background-color: rgb(73, 69, 69);
+    color: white;
+    height: 80px;
+    margin: 60px;
+    margin-bottom: 3px;
+}
+
+section ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+section ul li a{
+    text-decoration: none;
+    /*background-color: rgb(189, 182, 182);*/
+    color: black;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+section ul li a:hover{
+    background-color: rgb(25, 148, 25);
+    height: 80px;
+}
+
+.right{
+    margin-left: 150px;
+    background-color: rgb(22, 8, 8);
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+#rect {
+    animation-name: colorful;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes colorful {
+  0% {
+    background-color: rgb(113, 92, 141);
+  }
+  33% {
+    background-color: rgb(50, 37, 66);
+  }
+  66% {
+    background-color: rgb(49, 49, 12);
+  }
+  100% {
+    background-color: rgb(126, 126, 38);
+  }
+}
+
+/**************************** Sign Up Section **********************************/
+
+#box-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    margin: 0px 60px 0px 60px;
+    border: 1px black transparent;
+}
+
+#box-1{
+    /*background-color: rgb(131, 120, 120);*/
+    background-color: rgb(126, 126, 38);
+    height: 80%;
+    width: 50%;
+}
+
+#box-2{
+    
+    height: 50%;
+    width: 50%;
+}
+
+#box-3{
+    background-color: transparent;
+    width: 100%;
+}
+
+
+h1{
+    color: rgb(55, 126, 55);
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.form-div{
+   display: block;
+   text-align: center;
+}
+
+form{
+    display: inline-block;
+    width: 500px;
+    height: 350px;
+    padding: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    color:rgb(85, 190, 85);
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 4px;
+    color: black;
+}
+
+input[type='submit'] {
+    /*background-color: rgb(77, 54, 12);*/
+    background-color:  rgb(85, 190, 85);
+    color: rgb(3, 2, 2);
+    height: 40px;
+    width: 150px;
+    margin-left: 20%;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+input[type='submit']:hover{
+    background-color: rgb(11, 70, 11);
+}
+
+h1 a{
+    color: rgb(47, 121, 47);
+}
+
+h1 a:hover{
+    color: rgb(16, 48, 16);
+}
+
+
+/*************************************88888888888888888888888888888888**********************************/
+
+#safety{
+   border: 2px rgb(77, 72, 72) thin;
+}
+
+#safety h1{
+    color: black;
+    text-decoration: underline;
+}
+
+#safety p{
+    display: block;
+    letter-spacing: 0.02em;
+    border-left: 20px;
+}
+
+
+/****************************************FOOTER SECTION**************************************************/
+
+footer {
+    background-color: rgb(87, 87, 20);
+    height: 80px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    display: inline;
+}
+
+footer ul li a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.footer-socials{
+    float: right;
+    color: rgb(8, 8, 43);
+    font-weight: bold;
+}
+
+footer ul li a:hover{
+    background-color: rgb(25, 148, 25);
+}

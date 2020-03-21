@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridify | profile</title>
+    <link rel="stylesheet" href="/assets/profileStyle.css">
+</head>
+<body>
+    <div id="profile-container">
+
+        <div id="profile-1">
+
+                <ul>
+                    <li><a href="/dashboard" class="left-float" id="dash">Dashboard</a></li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="/edit/:id" class="left-float" id="dash">edit profile</a></li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li id="welcome">Welcome to your profile: &nbsp;<span style="color:black" ><%= name %></span></li>
+                </ul>
+
+        </div>
+
+
+        <div id="profile-2">
+
+            <h3>Name: &nbsp;<span style="color:red"><%= name %></span></h3>
+            <h3>Email: &nbsp;<span style="color:red"><%= email %></span></h3>
+            <h3>Location: &nbsp;<span style="color:red"><%= location %></span></h3>
+            <h4>Total number of rides taken: &nbsp;<span style="color:red">0</span></h4>
+            <h4>Total number of rides taken: &nbsp;<span style="color: red">0</span></h4>
+            
+
+        </div>
+        
+    </div>
+</body>
+</html>
