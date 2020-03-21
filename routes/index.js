@@ -37,16 +37,16 @@ router.get('/dashboard/profile/profile-edit', ensureAuthenticated, (req, res) =>
  // Edit/Update User Profile
  router.post('/dashboard/profile/profile-edit', ensureAuthenticated, async (req, res) => {
      try {
-         const user = req.user;
-   
-         user.name = req.body.name;
-         user.email = req.body.email
-         user.location = req.body.location
-   
-         await user.save();
-         res.redirect('/dashboard/profile')
-     }catch (err) {
-         console.log(err);
+            const user = req.user;
+    
+            user.name = req.body.name;
+            user.email = req.body.email
+            user.location = req.body.location
+    
+            await user.save();
+            res.redirect('/dashboard/profile')
+        }catch (err) {
+            console.log(err);
      }
  })
     
