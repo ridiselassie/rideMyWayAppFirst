@@ -102,7 +102,8 @@ router.get('/logout', (req, res) => {
 });
 
 // Get all users
-router.get('/users', async function(){
+
+/*router.get('/users', async function(){
     const users = await User.find()
     console.log(users);
 })
@@ -110,6 +111,6 @@ router.get('/users', async function(){
 router.get('/drivers', async function(){
     const dash = await Dash.find()
     console.log(dash);
-})
+})*/
 
 module.exports = router;
