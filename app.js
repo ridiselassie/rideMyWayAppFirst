@@ -19,7 +19,7 @@ mongoose.connect(db, {useNewUrlParser:true, useUnifiedTopology:true})
 .catch((err) => console.log(err));
 
 //EJS
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
 
 //Static Files
 app.use(express.static('./public'));
