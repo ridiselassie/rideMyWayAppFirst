@@ -35,16 +35,15 @@
         <%/* background image */%>
             <h1>Welcome <%= name %></h1>    
 
-            <form action="/create-offers" method="POST" id="addData" >
-                <input type="text" id="destination" name="destination" placeholder="Destination" value="">
-                <input type="text" id="departure" name="departure" placeholder="Depature Time" value="">
+            <form action="/dashboard" method="POST" id="addData" >
+                <input type="text" id="destination" placeholder="Destination" >
+                <input type="text" id="departure"  placeholder="Depature Time" >
                 <hr>
-                <input type="submit" value="Add Req">
+                <input type="submit" value="Submit">
             </form>
             
     </div>
 
-    <button id="getData">get rides</button>
 
     <div id="output">
     
@@ -53,9 +52,6 @@
     <%- include ('./partials/footer') %>
 
 
-    <script src="js/dashboard.js">
-
-
-    </script>
+    <script src="js/dashboard.js"></script>
 </body>
 </html>
