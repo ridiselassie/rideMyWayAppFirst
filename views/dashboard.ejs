@@ -20,7 +20,7 @@
                             </button>
                         <div class="dropdown-content">
                             <a href="">create offers</a>
-                            <a href="/dashboard/view-offers" id="">view offers</a>
+                            <a href="/dashboard/view-offers" id="getData">view offers</a>
                         </div>
                     </div>
                 
@@ -33,15 +33,15 @@
 
     <div id="car-pooling">
         <%/* background image */%>
+
             <h1>Welcome <%= name %></h1>    
 
             <form action="/dashboard" method="POST" id="addData" >
                 <input type="text" id="destination" placeholder="Destination" >
-                <input type="text" id="departure"  placeholder="Depature Time" >
+                <input type="text" id="departure" placeholder="Depature Time" >
                 <hr>
                 <input type="submit" value="Submit">
-            </form>
-            
+            </form> 
     </div>
 
 
